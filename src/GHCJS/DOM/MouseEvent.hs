@@ -1,0 +1,47 @@
+module GHCJS.DOM.MouseEvent where
+
+data MouseEvent = MouseEvent
+class IsMouseEvent a
+instance IsMouseEvent MouseEvent
+
+ghcjs_dom_mouse_event_init_mouse_event = undefined
+mouseEventInitMouseEvent = undefined
+ghcjs_dom_mouse_event_get_screen_x = undefined
+mouseEventGetScreenX = undefined
+ghcjs_dom_mouse_event_get_screen_y = undefined
+mouseEventGetScreenY = undefined
+ghcjs_dom_mouse_event_get_client_x = undefined
+mouseEventGetClientX = undefined
+ghcjs_dom_mouse_event_get_client_y = undefined
+mouseEventGetClientY = undefined
+ghcjs_dom_mouse_event_get_ctrl_key = undefined
+mouseEventGetCtrlKey = undefined
+ghcjs_dom_mouse_event_get_shift_key = undefined
+mouseEventGetShiftKey = undefined
+ghcjs_dom_mouse_event_get_alt_key = undefined
+mouseEventGetAltKey = undefined
+ghcjs_dom_mouse_event_get_meta_key = undefined
+mouseEventGetMetaKey = undefined
+ghcjs_dom_mouse_event_get_button = undefined
+mouseEventGetButton = undefined
+ghcjs_dom_mouse_event_get_related_target = undefined
+mouseEventGetRelatedTarget = undefined
+ghcjs_dom_mouse_event_get_movement_x = undefined
+mouseEventGetMovementX = undefined
+ghcjs_dom_mouse_event_get_movement_y = undefined
+mouseEventGetMovementY = undefined
+ghcjs_dom_mouse_event_get_offset_x = undefined
+mouseEventGetOffsetX = undefined
+ghcjs_dom_mouse_event_get_offset_y = undefined
+mouseEventGetOffsetY = undefined
+ghcjs_dom_mouse_event_get_x = undefined
+mouseEventGetX = undefined
+ghcjs_dom_mouse_event_get_y = undefined
+mouseEventGetY = undefined
+ghcjs_dom_mouse_event_get_from_element = undefined
+mouseEventGetFromElement = undefined
+ghcjs_dom_mouse_event_get_to_element = undefined
+mouseEventGetToElement = undefined
+castToMouseEvent = undefined
+gTypeMouseEvent = undefined
+toMouseEvent = undefined

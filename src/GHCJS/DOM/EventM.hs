@@ -1,0 +1,59 @@
+module GHCJS.DOM.EventM where
+
+import Control.Monad.Reader ( ReaderT, ask, runReaderT )
+
+type Signal target callback = target -> callback -> IO (IO ())
+type EventM e t a = ReaderT (t, e) IO a
+
+target = undefined
+event = undefined
+eventTarget = undefined
+eventCurrentTarget = undefined
+eventPhase = undefined
+bubbles = undefined
+cancelable = undefined
+timeStamp = undefined
+stopPropagation = undefined
+preventDefault = undefined
+defaultPrevented = undefined
+stopImmediatePropagation = undefined
+srcElement = undefined
+getCancelBubble = undefined
+cancelBubble = undefined
+getReturnValue = undefined
+returnValue = undefined
+uiView = undefined
+uiDetail = undefined
+uiKeyCode = undefined
+uiCharCode = undefined
+uiLayerX = undefined
+uiLayerY = undefined
+uiLayerXY = undefined
+uiPageX = undefined
+uiPageY = undefined
+uiPageXY = undefined
+uiWhich = undefined
+mouseScreenX = undefined
+mouseScreenY = undefined
+mouseScreenXY = undefined
+mouseClientX = undefined
+mouseClientY = undefined
+mouseClientXY = undefined
+mouseMovementX = undefined
+mouseMovementY = undefined
+mouseMovementXY = undefined
+mouseCtrlKey = undefined
+mouseShiftKey = undefined
+mouseAltKey = undefined
+mouseMetaKey = undefined
+mouseButton = undefined
+mouseRelatedTarget = undefined
+mouseOffsetX = undefined
+mouseOffsetY = undefined
+mouseOffsetXY = undefined
+mouseX = undefined
+mouseY = undefined
+mouseXY = undefined
+mouseFromElement = undefined
+mouseToElement = undefined
+connect = undefined

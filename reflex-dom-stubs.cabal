@@ -1,0 +1,49 @@
+Name: reflex-dom-stubs
+Version: 0.1
+Synopsis: Stubs for building reflex-dom with GHC without gtk
+Description: Stubs that allow reflex-dom to build (but not work) with GHC
+             without needing to install all the gtk-related packages.
+License: BSD3
+License-file: LICENSE
+Author: Doug Beardsley
+Maintainer: mightybyte@gmail.com
+Stability: Experimental
+Category: Web
+Build-type: Simple
+Cabal-version: >=1.9.2
+
+library
+  hs-source-dirs: src
+  build-depends:
+    base >= 4 && < 5,
+    mtl
+
+  exposed-modules:
+    GHCJS.DOM
+    GHCJS.DOM.DOMWindow
+    GHCJS.DOM.Document
+    GHCJS.DOM.Element
+    GHCJS.DOM.EventM
+    GHCJS.DOM.HTMLElement
+    GHCJS.DOM.HTMLInputElement
+    GHCJS.DOM.HTMLSelectElement
+    GHCJS.DOM.HTMLTextAreaElement
+    GHCJS.DOM.MouseEvent
+    GHCJS.DOM.NamedNodeMap
+    GHCJS.DOM.Navigator
+    GHCJS.DOM.Node
+    GHCJS.DOM.Types
+    GHCJS.DOM.UIEvent
+    Graphics.UI.Gtk.WebKit.Types
+    Graphics.UI.Gtk.WebKit.WebSettings
+    Graphics.UI.Gtk.WebKit.WebFrame
+    Graphics.UI.Gtk.WebKit.WebInspector
+    Graphics.UI.Gtk.WebKit.WebView
+    Graphics.UI.Gtk.WebKit.JavaScriptCore.JSBase
+    Graphics.UI.Gtk.WebKit.JavaScriptCore.JSObjectRef
+    Graphics.UI.Gtk.WebKit.JavaScriptCore.JSStringRef
+    Graphics.UI.Gtk.WebKit.JavaScriptCore.JSValueRef
+    Graphics.UI.Gtk.WebKit.JavaScriptCore.WebFrame
+
+    Graphics.UI.Gtk
+    System.Glib.FFI
